@@ -1,0 +1,184 @@
+/* Подключаем пиксельный шрифт в стиле Minecraft */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  background: url('https://cdna.artstation.com/p/assets/images/images/009/185/874/original/jeremie-persault-animation-fond-decran2.gif?1517577539') no-repeat center center fixed; /* Фон смерти Minecraft */
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 40px; /* Увеличен отступ для большего размера меню */
+  border: 5px solid #4d4d4d; /* Увеличен размер границы */
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.7); /* Увеличена тень для выделения */
+  text-align: center;
+}
+
+/* Стили для заголовка "Minecraft Menu" */
+.title {
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem; /* Увеличиваем размер заголовка */
+  position: relative; /* Делаем заголовок контейнером для BETA */
+  display: inline-block;
+  text-align: center;
+  padding-right: 50px; /* Добавляем место справа для BETA */
+}
+
+p {
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.menu-button {
+  display: block;
+  padding: 20px 40px; /* Увеличены размеры кнопок */
+  font-family: 'Press Start 2P', cursive;
+  font-size: 18px; /* Увеличен размер шрифта на кнопках */
+  text-decoration: none;
+  color: white;
+  background: #333;
+  border: 3px solid #4d4d4d;
+  box-shadow: 2px 2px 0px #111;
+  margin-bottom: 20px; /* Увеличены отступы между кнопками */
+  transition: background 0.3s ease, transform 0.2s ease; /* Анимация перехода для кнопок */
+}
+
+.menu-button:hover {
+  background: #444; /* Цвет при наведении */
+  transform: scale(1.1); /* Немного увеличиваем размер при наведении */
+}
+
+/* Стили для калькулятора */
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+  border: 3px solid #4d4d4d;
+  position: relative;
+  z-index: 1;
+}
+
+.result {
+  width: 320px;
+  height: 75px;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  background: #3C3C3C;
+  text-align: right;
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'Press Start 2P', cursive;
+  border: 3px solid black;
+  padding: 5px;
+}
+
+.my-btn {
+  margin-right: 5px;
+  margin-top: 5px;
+  width: 75px;
+  height: 75px;
+  border: 3px solid #2a2a2a;
+  background: #8B8B8B;
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'Press Start 2P', cursive;
+  cursor: pointer;
+  user-select: none;
+  text-transform: uppercase;
+  box-shadow: 5px 5px 0px #4d4d4d;
+  transition: background 0.3s ease, transform 0.2s ease; /* Добавлена анимация перехода */
+}
+
+.my-btn:hover {
+  background: #A9A9A9; /* Цвет при наведении */
+  transform: scale(1.1); /* Немного увеличиваем размер при наведении */
+}
+
+.my-btn:active {
+  box-shadow: 3px 3px 0px #4d4d4d;
+  transform: translate(3px, 3px);
+}
+
+.my-btn.primary {
+  background: #1E3A8A;
+}
+
+.my-btn.secondary {
+  background: #7D7D7D;
+}
+
+.my-btn.execute {
+  width: 160px;
+  border-radius: 8px;
+}
+
+/* Добавляем стили для кнопок с операциями и знаками */
+.my-btn.operator {
+  background: #4CAF50; /* Задний фон для операций */
+}
+
+.my-btn.operator:hover {
+  background: #66BB6A; /* Цвет при наведении на операцию */
+}
+
+/* Подвал с информацией */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+}
+
+footer .version {
+  margin: 0;
+}
+
+footer .copyright {
+  margin: 0;
+  text-align: right;
+}
+
+/* Стили для надписи "BETA!!!" */
+.beta-tag {
+  position: absolute;
+  top: 0px; /* Опускаем чуть ниже */
+  right: -40px; /* Держим в конце заголовка */
+  transform: rotate(-20deg); /* Наклоняем влево */
+  color: yellow;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  text-shadow: 3px 3px 0px black;
+  z-index: 10; /* Над текстом */
+  animation: betaPulse 1s infinite alternate ease-in-out;
+}
+
+/* Анимация увеличения */
+@keyframes betaPulse {
+  0% {
+    transform: rotate(-20deg) scale(1);
+  }
+  100% {
+    transform: rotate(-20deg) scale(1.1);
+  }
+}
