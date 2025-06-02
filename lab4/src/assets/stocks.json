@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "src": "https://i.pinimg.com/736x/8c/9c/07/8c9c07197673ea349f1dbac6c276b927.jpg",
+        "title": "Долгожданное открытие сервера!",
+        "text": "Начни свое приключение уже сегодня на ИУ5-41Б!"
+    },
+    {
+        "id": 2,
+        "src": "https://i.pinimg.com/736x/54/ca/e6/54cae635e5bbec9fa7ae58682574a1c2.jpg",
+        "title": "Быстрый старт!",
+        "text": "Построй город мечты!"
+    },
+    {
+        "id": 3,
+        "src": "https://i.pinimg.com/736x/e3/18/5b/e3185b2e1992a6ff86f689b2ba13a637.jpg",
+        "title": "Лучшее лобби!",
+        "text": "Найди новых друзей уже сегодня!"
+    },
+    {
+        "id": 4,
+        "src": "https://i.pinimg.com/originals/c9/ea/65/c9ea654eb3a7398b1f702c758c1c4206.jpg",
+        "title": "Акция 4",
+        "text": "Такой акции вы еще не видели 4"
+    }
+]
